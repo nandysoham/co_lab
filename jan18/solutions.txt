@@ -1,0 +1,290 @@
+		SOLUTION.TXT
+		------------
+		Soham Nandy 
+		CS20b046
+
+
+/*
+
+Most of the text in this file comprises of system outputs which has been redirected to this file
+There might be indentation errors ahead!
+
+*/
+
+
+Q1>
+
+
+commands -->
+g++ -std=c++17 -O0 q1.cpp -o astO0.out
+g++ -std=c++17 -O3 q1.cpp -o astO3.out
+------------------------------------------
+ ls -l >> solutions.txt
+-----------------------------------------
+
+-rwxr-xr-x  1 soham  staff  52872 Jan 18 15:25 astO0.out
+-rwxr-xr-x  1 soham  staff  50632 Jan 18 15:25 astO3.out
+-rw-r--r--  1 soham  staff    534 Jan 18 15:19 q1.cpp
+-rw-r--r--  1 soham  staff      0 Jan 18 15:34 solutions.txt
+
+-------------- outputs of O0.out and O1.out-----------
+
+for i in {1..10} do; ./astO0.out >> solutions.txt done;
+--------------------------------------------------------
+
+Runtimes with O0
+
+0
+758364
+0
+457433
+0
+451990
+0
+450419
+0
+452661
+0
+453795
+0
+453767
+0
+446462
+0
+451048
+0
+451340
+
+
+Runtimes with O3
+0
+451748
+0
+359566
+0
+350233
+0
+348510
+0
+351474
+0
+351991
+0
+349608
+0
+352503
+0
+345283
+0
+351960
+0
+346015
+0
+366094
+
+
+Q2> After printing out the value --> the runtimes with
+
+
+for i in {1..10} do; ./astout0.out >> solutions.txt done;
+-------------------------------------------------
+O0-->
+
+0
+660967
+0
+452134
+0
+450967
+0
+452277
+0
+453408
+0
+454587
+0
+458474
+0
+457804
+0
+453023
+0
+459568
+0
+449932
+0
+343977
+
+
+O3 -->
+for i in {1..10} do; ./astout3.out >> solutions.txt done;
+-----------------------------------------------------
+0
+347604
+0
+353294
+0
+348618
+0
+348316
+0
+348637
+0
+355066
+0
+353934
+0
+351299
+0
+350955
+0
+348584
+
+
+Sizes of the files -->
+asto0 , asto3 --> without the print statements
+astout0, astout3 --> with the print statements
+
+
+total 432
+-rwxr-xr-x  1 soham  staff  52872 Jan 18 15:45 asto0.out
+-rwxr-xr-x  1 soham  staff  50632 Jan 18 15:46 asto3.out
+-rwxr-xr-x  1 soham  staff  52872 Jan 18 15:59 astout0.out
+-rwxr-xr-x  1 soham  staff  50632 Jan 18 15:59 astout3.out
+-rw-r--r--  1 soham  staff    540 Jan 18 15:58 q1.cpp
+-rw-r--r--  1 soham  staff    798 Jan 18 16:00 solutions.txt
+
+
+
+Q3 --> for normal i j --> runtimes would be
+0
+660967
+0
+452134
+0
+450967
+0
+452277
+0
+453408
+0
+454587
+0
+458474
+0
+457804
+0
+453023
+0
+459568
+0
+449932
+0
+343977
+
+when i and j are swqpped --> runtimes are
+----------------------------------------
+
+0
+1530960
+0
+1400253
+0
+1729400
+0
+1374757
+0
+1373665
+0
+1373747
+0
+1344423
+0
+1360600
+0
+1758094
+0
+1347225
+0
+1365067
+
+
+
+Q4-->
+----------------------------------------
+here I have generated the program for taking input of 10000 nums to an array and some random n number of numbers to a linked list
+
+A seperate python program generates the input file every time and this input is fed to the cpp program and the output is noted in the file
+
+---------------------------------
+COMMANDS -->
+for in in {1..10} do; python3 gennum.py > input.txt && ./exec <input.txt >> solutions.txt done;
+-------------------------------------------------------------------------------------------
+
+
+ array time --> 17024
+linked list time with n = 3135-->  5598
+ ---------------------------------------------------------------------
+ array time --> 16848
+linked list time with n = 7060-->  12270
+ ---------------------------------------------------------------------
+ array time --> 16650
+linked list time with n = 9449-->  16275
+ ---------------------------------------------------------------------
+ array time --> 16859
+linked list time with n = 7979-->  13634
+ ---------------------------------------------------------------------
+ array time --> 16584
+linked list time with n = 6379-->  10959
+ ---------------------------------------------------------------------
+ array time --> 17005
+linked list time with n = 5630-->  9525
+ ---------------------------------------------------------------------
+ array time --> 16921
+linked list time with n = 8398-->  14497
+ ---------------------------------------------------------------------
+ array time --> 17600
+linked list time with n = 2748-->  4675
+ ---------------------------------------------------------------------
+ array time --> 16710
+linked list time with n = 1659-->  2829
+ ---------------------------------------------------------------------
+ array time --> 16622
+linked list time with n = 5978-->  10157
+ ---------------------------------------------------------------------
+ array time --> 16922
+linked list time with n = 6630-->  11401
+ ---------------------------------------------------------------------
+
+
+ Q5 --> a standard O(n^3) algorithm for matrix multiplication 
+
+ /*
+here too I have generated a python script to print a random nxn matrix and this input is being fed into the cpp program as an input
+
+COMMANDS-->
+----------------------------------------------------------------------------------------------
+for i in {1..10} do; python3 genmat.py > input1.txt && ./compiled < input1.txt done;
+ */
+
+
+
+Time - 0.000129 s
+Time - 0.000061 s
+Time - 0.001114 s
+Time - 0.000101 s
+Time - 0.000038 s
+Time - 0.000614 s
+Time - 0.000404 s
+Time - 0.000643 s
+Time - 0.000037 s
+Time - 0.000103 s
+Time - 0.000048 s
+
+
+
+/*
+Improvements of this code-->
+Maybe by tweaking i,j,k values some increment or decrement in time complexity can be seen
+
+*/
