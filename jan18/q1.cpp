@@ -15,7 +15,7 @@ int main()
   auto start = high_resolution_clock::now();
   for (ull i = 0; i < N; i++) {
     for (ull j = 0; j < N; j++) {
-      sum += a[j][i];
+      sum += a[i][j];
     }
   }
   

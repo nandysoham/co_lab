@@ -46,6 +46,7 @@ ll ncr(ll n,ll r){ if(r>n || r<0) return 0; ll num = 1,den =1; r = min(r, n-r);f
 
 void solve(){
     int n; cin>>n;
+    cout<<"for n = "<<n<<" --> ";
     vector <vector <int> > mat1(n, vector <int> (n)), mat2(n, vector <int> (n)),  ans(n, vector <int> (n));
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){

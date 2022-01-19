@@ -1,6 +1,6 @@
 import random
 
-n = random.randint(1,20)
+n = random.randint(1,100)
 print(n)
 
 for i in range(n):
