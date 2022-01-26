@@ -1,0 +1,57 @@
+Looking at the registers
+
+registers --> fill the role variables in high level languages
+but it can't have a dtype, name
+
+
+can think of this as a generic global variable.
+In MIPS --> 32 such registers and each has 31 signed bits 
+
+
+we have mnemonics for each of the 32  32 bit registers
+
+
+so registers-->
+$zero --> is permanently hardwared to 0 and this is indeed useful
+$t0 - $t9 --> for temporarily storing the data (this would be the most frequently used)
+
+in functionsy--->
+$s0 - $s7 --> saved registers --> the values will not change with function calls unlike the temporary registers
+$a0 - $a3 --> 4 argument register
+$v0 - $v1 --> for returning values
+$ra  --> where to return (essentially the return addresses)
+
+in Memory -->
+$sp  --> stack pointer --> for local variables in the memory
+$fp --> similar to stack pointer(where the stack starts and stack pointer will tell where it will end)
+$gp --> for maintaining heap instructin 
+
+
+Reserved -->2
+$at --> assembler temporory  --> to convert sudo instructions into actual machine level instructions
+$k0 - $k1 -> for the operating system kerne
+
+
+VIDEO 3
+
+QTSIM -->
+
+on opening --> some defualt code 
+
+on top left --> some other registers 
+PC --> program counter
+EPC --> exception program counter
+
+
+VIDEO 4-->
+syscall --> will give an option to interact with the OS
+mostly used for I/O
+
+operations
+1--> for print a 32 bit integer
+4 --> for printing a string
+5 --> for reading a 32-bit integer
+10 --> quit
+
+
+

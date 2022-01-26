@@ -1,0 +1,21 @@
+Soham Nandy
+CS20B046
+---------------------------------------
+
+
+Q5>
+g++ -g -O0 -Wa,-aslh assembly.cpp
+
+-g --> for generating symbols
+-o2 --> optimization levels
+-Wa, --> to  pass options to the assembler with options after the ,
+-aslh --> combination of commands
+        -a ==> for listing
+        -al ==> include assembly code
+        -as ==> include symbols
+        -ah ==> include source code
+
+
+Q9>
+    Write a program to print hello soham in Assembly language
+    code ==> hellosoham.asm
