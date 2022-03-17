@@ -1,0 +1,11 @@
+CS20B046 SOHAM NANDY
+
+1. Done using 2 commands for setting the first half and the second half seperately
+
+2. li ==> pseudo command because it does not have a machine language equivalent
+        the assembler translates it into equivalent machine level equivalent
+3. Done
+
+4. Done
+
+5. Done
