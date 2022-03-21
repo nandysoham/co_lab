@@ -38,5 +38,6 @@ else_case:
     move $a0, $t1
     syscall
 
+# termination condition
 li $v0,10
 syscall
