@@ -9,3 +9,4 @@ main:
 	la $a0, hello_world 	#load address of string to be printed into $a0
 	syscall
 	jr $ra
+	
