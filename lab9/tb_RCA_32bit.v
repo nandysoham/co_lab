@@ -1,6 +1,6 @@
 // Test bench for RCA_32bit.v 
 
-module TB_RCA_32bit();
+module tb_RCA_32bit();
 
 reg [31:0]A, B; 
 reg [0:0]C0; //single bit
@@ -8,7 +8,7 @@ reg [0:0]C0; //single bit
 wire [32:0]Sum; // sum = A + B + cin
 
 
-RCA_4bit UUT ( 	.A(A),
+RCA_32bit UUT ( 	.A(A),
 		.B(B), 
 		.cin(C0), 
 		.S(Sum));

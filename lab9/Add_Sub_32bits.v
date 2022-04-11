@@ -3,7 +3,7 @@
 //Output S is  N+1-bits
 
 
-module Add_Sub_Nbit #(parameter N=31)(A,B, k, S);
+module Add_Sub_32bit #(parameter N=31)(A,B, k, S);
 //parameter N = 31;
 input [N-1:0]A,B; // inputs are N-bits
 input k; // sign bit 
