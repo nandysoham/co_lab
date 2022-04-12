@@ -15,7 +15,7 @@ generate
 
 for (i = 0; i < 32; i= i+1) begin : FA  
 	OR_2in _or(.a(A[i]), .b(B[i]), .y(S1[i]));
-        AND_2in _and(.a(A[i]), .b(B[i]), .y(S1[i]));
+    AND_2in _and(.a(A[i]), .b(B[i]), .y(S1[i]));
 	NOR_2in _nor(.a(A[i]), .b(B[i]), .y(S1[i]));
 
 end
